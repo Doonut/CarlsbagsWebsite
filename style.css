@@ -1,0 +1,22 @@
+@font-face {
+	font-family: BlissfulThinking;
+	src: url(resource/blissfulthinking.ttf);
+}
+body {
+	background-color: black;
+}
+.Header {
+	color: green;
+	font-family: BlissfulThinking;
+	font-size: 60px;
+	display: inline;
+	float: left;
+}
+#lineup {
+	display: table;
+}
+.logo {
+	display: inline;
+	float: left;
+	padding-right: 100px;
+}
