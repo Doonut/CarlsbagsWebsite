@@ -5,18 +5,38 @@
 body {
 	background-color: black;
 }
-.Header {
-	color: green;
-	font-family: BlissfulThinking;
-	font-size: 60px;
-	display: inline;
-	float: left;
+.outsideBorder {
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-align: center;
+	background-color: green;
 }
-#lineup {
+.table {
 	display: table;
 }
-.logo {
-	display: inline;
-	float: left;
-	padding-right: 100px;
+
+div {
+	display: block;
 }
+.Nav {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+li {
+	display: inline;
+	padding-left: 5px;
+}
+.Headerlink {
+	font-family: BlissfulThinking;
+	display: block;
+	text-align: center;
+	font-size: 40px;
+    width: 90px;
+}
+.Headerlink:link  {color:#FFFFFF; background-color:transparent}
+.Headerlink:visited {color:#FFFFFF; background-color:transparent}
+.Headerlink:hover   {color:#FFFFFF; background-color:transparent}
+.Headerlink:active  {color:#FFFFFF; background-color:transparent}
