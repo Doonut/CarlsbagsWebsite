@@ -9,7 +9,7 @@ body {
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	text-align: center;
-	background-color: green;
+	padding-top: 50px;
 }
 .table {
 	display: table;
@@ -29,14 +29,19 @@ li {
 	display: inline;
 	padding-left: 5px;
 }
-.Headerlink {
+.HeaderLink {
 	font-family: BlissfulThinking;
-	display: block;
 	text-align: center;
-	font-size: 40px;
+	font-size: 26px;
+	padding-left: 10px;
+	text-decoration: none;
     width: 90px;
 }
-.Headerlink:link  {color:#FFFFFF; background-color:transparent}
-.Headerlink:visited {color:#FFFFFF; background-color:transparent}
-.Headerlink:hover   {color:#FFFFFF; background-color:transparent}
-.Headerlink:active  {color:#FFFFFF; background-color:transparent}
+.HeaderLink:link  {color:#FFFFFF; background-color:transparent}
+.HeaderLink:visited {color:#FFFFFF; background-color:transparent}
+.HeaderLink:active  {color:#FFFFFF; background-color:transparent}
+
+#pocketbag:hover{color:#0365B8;}
+#junkbucket:hover{color:#93B50C;}
+#surfsling:hover{color:#FFF68F;}
+#contact:hover{color:#C04000;}
