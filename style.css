@@ -5,11 +5,8 @@
 body {
 	background-color: black;
 }
-.outsideBorder {
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	text-align: center;
-	padding-top: 50px;
+.relpos {
+	position: relative;
 }
 .table {
 	display: table;
@@ -29,6 +26,13 @@ li {
 	display: inline;
 	padding-left: 5px;
 }
+.Headercbags {
+	font-family: BlissfulThinking;
+
+	font-size: 60px;
+	color:#FFFFFF;
+}
+
 .HeaderLink {
 	font-family: BlissfulThinking;
 	text-align: center;
@@ -45,3 +49,7 @@ li {
 #junkbucket:hover{color:#93B50C;}
 #surfsling:hover{color:#FFF68F;}
 #contact:hover{color:#C04000;}
+
+
+
+

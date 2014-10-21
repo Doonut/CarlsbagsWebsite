@@ -5,13 +5,24 @@
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 <body>
-
+<script type="text/javascript" src="BigVideo/lib/jquery.js"></script>
+<script type="text/javascript" src="BigVideo/lib/jquery-ui.js"></script>
+<script type="text/javascript" src="BigVideo/lib/video.js"></script>
+<script type="text/javascript" src="BigVideo/lib/imagesloaded.js"></script>
+<script type="text/javascript" src="BigVideo/lib/bigvideo.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var BV = new $.BigVideo();
+		BV.init();
+		BV.show('resource/beach.mp4',{ambient:true});
+	});
+</script>
+<div class="relpos">
 <!--NavBar-->
-<div class="outsideBorder">
+<h1 class="Headercbags">Carlsbags<img src="resource/cbagslogo.png"width="74" height="64"></h1>
 <div class="menu-outer">
 <div class="table">
 <ul class="Nav">
-<li><a class="HeaderLink" href="index.html"><img src="resource/cbagslogo.png" width="145px" height="128px"></a></li>
 <li><a class="HeaderLink" id= "pocketbag" href="pocketbag.html">Pocket Bag</a></li>
 <li><a class="HeaderLink" id= "junkbucket" href="junkbucket.html">Junk Bucket</a></li>
 <li><a class="HeaderLink" id= "surfsling" href="surfsling">Surf Sling</a></li>
@@ -19,8 +30,7 @@
 </ul>
 </div>
 </div>
-</div>
 
-<p></p>
+</div>
 </body>
 </html>
