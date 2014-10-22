@@ -2,14 +2,17 @@
 	font-family: BlissfulThinking;
 	src: url(resource/blissfulthinking.ttf);
 }
-body {
-	background-color: black;
-}
 .relpos {
 	position: relative;
 }
 .table {
 	display: table;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: auto;
 }
 
 div {
@@ -50,6 +53,14 @@ li {
 #surfsling:hover{color:#FFF68F;}
 #contact:hover{color:#C04000;}
 
+#big-video-wrap {
+	overflow: hidden;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
 
 
 
