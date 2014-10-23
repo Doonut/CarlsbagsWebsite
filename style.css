@@ -5,16 +5,13 @@
 .relpos {
 	position: relative;
 	background-color: rgba(0,0,0,.6);
-	width: 515px;
-	height: 180px;
-	border-radius: 7px;
 	padding-left: 10px;
+	padding-bottom: 10px;
 }
-
-.paddingleft {
-	padding-left: 5px;
+.content {
+	padding-left: 15%;
+	padding-right: 15%; 
 }
-
 .table {
 	display: table;
 }
@@ -22,9 +19,12 @@ html, body {
     margin: 0;
     padding: 0;
     color: #fff;
+    background-image: url('resource/background.png');
     height: auto;
 }
-
+h1,p {
+	font-family: BlissfulThinking;
+}
 div {
 	display: block;
 }
@@ -37,18 +37,20 @@ div {
 
 li {
 	display: inline;
-	padding-left: 5px;
+	padding-left: 10px;
 }
 .Headercbags {
 	font-family: BlissfulThinking;
 	font-size: 60px;
 	color:#FFFFFF;
+	top: -3.5%;
+	left: 11%;
 }
 .HeaderLinkCbags {text-decoration: none;}
 .HeaderLinkCbags:link  {color:#FFFFFF; background-color:transparent}
 .HeaderLinkCbags:visited {color:#FFFFFF; background-color:transparent}
 .HeaderLinkCbags:active  {color:#FFFFFF; background-color:transparent}
-.HeaderLinkCbags:hover{color:#03396c;}
+.HeaderLinkCbags:hover{color:#03396C;}
 
 .HeaderLink {
 	font-family: BlissfulThinking;
@@ -84,10 +86,11 @@ li {
 }
 
 .missionstatementcontentstyle {
-	position: relative;
+	position: absolute;
 	display: block;
 	background-color: rgba(0,0,0,.6);
-	width: 30%;
+	width: 20%;
+	top: 28%;
 	border-radius: 7px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -95,14 +98,15 @@ li {
 }
 
 .missionstatementcontentmovement {
-	padding-left: 5%;
-	float: left;
+	padding-left: 2%;
 }
 
 .productdesccontentstyle {
-	position: relative;
+	position: absolute;
 	background-color: rgba(0,0,0,.6);
-	width: 55%;
+	width: 35%;
+	top: 28%;
+	left: 30%;
 	border-radius: 7px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -110,13 +114,10 @@ li {
 }
 
 .productdesccontentmovement {
-	padding-left: 5%;
-	float: left;
+	padding-left: 3%;
 }
 
-.itemlist {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: block;
-}
+.contactaddress:link  {color:#FFFFFF; background-color:transparent}
+.contactaddress:visited {color:#FFFFFF; background-color:transparent}
+.contactaddress:active  {color:#FFFFFF; background-color:transparent}
+.contactaddress:hover{color:#C04000;}
