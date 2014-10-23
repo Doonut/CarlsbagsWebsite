@@ -4,7 +4,17 @@
 }
 .relpos {
 	position: relative;
+	background-color: rgba(0,0,0,.6);
+	width: 515px;
+	height: 180px;
+	border-radius: 7px;
+	padding-left: 10px;
 }
+
+.paddingleft {
+	padding-left: 5px;
+}
+
 .table {
 	display: table;
 }
@@ -31,16 +41,19 @@ li {
 }
 .Headercbags {
 	font-family: BlissfulThinking;
-
 	font-size: 60px;
 	color:#FFFFFF;
 }
+.HeaderLinkCbags {text-decoration: none;}
+.HeaderLinkCbags:link  {color:#FFFFFF; background-color:transparent}
+.HeaderLinkCbags:visited {color:#FFFFFF; background-color:transparent}
+.HeaderLinkCbags:active  {color:#FFFFFF; background-color:transparent}
+.HeaderLinkCbags:hover{color:#03396c;}
 
 .HeaderLink {
 	font-family: BlissfulThinking;
 	text-align: center;
 	font-size: 26px;
-	padding-left: 10px;
 	text-decoration: none;
     width: 90px;
 }
@@ -53,6 +66,8 @@ li {
 #surfsling:hover{color:#FFF68F;}
 #contact:hover{color:#C04000;}
 
+
+
 #big-video-wrap {
 	overflow: hidden;
 	position: fixed;
@@ -62,5 +77,46 @@ li {
 	left: 0;
 }
 
+.logo {
+	position: absolute;
+	top: 0%;
+	left: 48%;
+}
 
+.missionstatementcontentstyle {
+	position: relative;
+	display: block;
+	background-color: rgba(0,0,0,.6);
+	width: 30%;
+	border-radius: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 1px;
+}
 
+.missionstatementcontentmovement {
+	padding-left: 5%;
+	float: left;
+}
+
+.productdesccontentstyle {
+	position: relative;
+	background-color: rgba(0,0,0,.6);
+	width: 55%;
+	border-radius: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 1px;
+}
+
+.productdesccontentmovement {
+	padding-left: 5%;
+	float: left;
+}
+
+.itemlist {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
