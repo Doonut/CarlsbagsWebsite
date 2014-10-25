@@ -10,10 +10,13 @@
 }
 .content {
 	padding-left: 15%;
-	padding-right: 15%; 
+	padding-right: 15%;
 }
 .table {
 	display: table;
+}
+.Logo {
+	float:left;
 }
 html, body {
     margin: 0;
@@ -43,8 +46,7 @@ li {
 	font-family: BlissfulThinking;
 	font-size: 60px;
 	color:#FFFFFF;
-	top: -3.5%;
-	left: 11%;
+	padding-top: 15px;
 }
 .HeaderLinkCbags {text-decoration: none;}
 .HeaderLinkCbags:link  {color:#FFFFFF; background-color:transparent}
