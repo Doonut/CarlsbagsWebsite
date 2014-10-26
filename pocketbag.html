@@ -3,20 +3,21 @@
 <head>
 	<title>Carlsbags</title>
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<link rel="icon" type="image/png" href="resource/logo.png">
+	<script type="text/javascript" src="BigVideo/lib/jquery.js"></script>
+	<script type="text/javascript" src="BigVideo/lib/jquery-ui.js"></script>
+	<script type="text/javascript" src="BigVideo/lib/video.js"></script>
+	<script type="text/javascript" src="BigVideo/lib/imagesloaded.js"></script>
+	<script type="text/javascript" src="BigVideo/lib/bigvideo.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var BV = new $.BigVideo();
+			BV.init();
+			BV.show('resource/beach.mp4',{ambient:true});
+		});
+	</script>
 </head>
 <body>
-<script type="text/javascript" src="BigVideo/lib/jquery.js"></script>
-<script type="text/javascript" src="BigVideo/lib/jquery-ui.js"></script>
-<script type="text/javascript" src="BigVideo/lib/video.js"></script>
-<script type="text/javascript" src="BigVideo/lib/imagesloaded.js"></script>
-<script type="text/javascript" src="BigVideo/lib/bigvideo.js"></script>
-<script type="text/javascript">
-	$(function(){
-		var BV = new $.BigVideo();
-		BV.init();
-		BV.show('resource/beach.mp4',{ambient:true});
-	});
-</script>
 <div class="relpos">
 <!--NavBar-->
 <img src="resource/logo.png" width="75" height="94" class="Logo">
