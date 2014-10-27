@@ -24,6 +24,8 @@ html, body {
     color: #fff;
     background-image: url('resource/background.jpeg');
     height: auto;
+    background-repeat:no-repeat;
+   	background-size:cover;
 }
 h1,p {
 	font-family: BlissfulThinking;
