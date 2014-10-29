@@ -2,37 +2,46 @@
 	font-family: BlissfulThinking;
 	src: url(resource/blissfulthinking.ttf);
 }
+
 .relpos {
 	position: relative;
 	background-color: rgba(0,0,0,.6);
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
+
 .content {
 	padding-left: 15%;
 	padding-right: 15%;
 }
+
 .table {
 	display: table;
 }
+
 .Logo {
 	float:left;
 }
+
 html, body {
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: rgba(0,0,0,0);
     background-image: url('resource/background.jpeg');
     height: auto;
     background-repeat:no-repeat;
    	background-size:cover;
 }
+
 h1,p {
 	font-family: BlissfulThinking;
+	color: #FFF;
 }
+
 div {
 	display: block;
 }
+
 .Nav {
 	list-style-type: none;
     margin: 0;
@@ -72,8 +81,6 @@ li {
 #surfsling:hover{color:#FFF68F;}
 #contact:hover{color:#C04000;}
 
-
-
 #big-video-wrap {
 	overflow: hidden;
 	position: fixed;
@@ -87,38 +94,6 @@ li {
 	position: absolute;
 	top: 0%;
 	left: 48%;
-}
-
-.missionstatementcontentstyle {
-	position: absolute;
-	display: block;
-	background-color: rgba(0,0,0,.6);
-	width: 20%;
-	top: 28%;
-	border-radius: 7px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 1px;
-}
-
-.missionstatementcontentmovement {
-	padding-left: 2%;
-}
-
-.productdesccontentstyle {
-	position: absolute;
-	background-color: rgba(0,0,0,.6);
-	width: 35%;
-	top: 28%;
-	left: 30%;
-	border-radius: 7px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 1px;
-}
-
-.productdesccontentmovement {
-	padding-left: 3%;
 }
 
 .contactaddress:link  {color:#FFFFFF; background-color:transparent}
