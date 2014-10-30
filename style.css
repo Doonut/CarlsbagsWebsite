@@ -38,6 +38,10 @@ h1,p {
 	color: #FFF;
 }
 
+p	{
+	text-align: justify;
+}
+
 div {
 	display: block;
 }
