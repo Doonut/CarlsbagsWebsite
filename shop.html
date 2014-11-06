@@ -23,6 +23,34 @@
 </div>
 <div class="content">
 	<h1 style="text-align:center; padding-top:50px;">Products</h1>
+<ul class="Products">
+	<li class="productitem">
+	<div class="simpleCart_shelfItem">
+  <h2 class="item_name"> Pocket Bag </h2>
+<p>  <input type="text" value="1" size="1" class="item_Quantity"><br>
+  <span class="item_price">$14.99</span><br>
+  <a class="item_add" href="javascript:;"> Add to Cart </a></p>
+</div>
+</li>
+<li class="productitem">
+<div class="simpleCart_shelfItem">
+<h2 class="item_name"> Junk Bucket </h2>
+<p>  <input type="text" value="1" size="1" class="item_Quantity"><br>
+<span class="item_price">$59.99</span><br>
+<a class="item_add" href="javascript:;"> Add to Cart </a></p>
+</div>
+</li>
+<li class="productitem">
+<div class="simpleCart_shelfItem">
+<h2 class="item_name"> Surf Sling </h2>
+<p>  <input type="text" value="1" size="1" class="item_Quantity"><br>
+<span class="item_price">$34.99</span><br>
+<a class="item_add" href="javascript:;"> Add to Cart </a></p>
+</div>
+</li>
+</ul>
+<div class="simpleCart_items"></div>
+</div>
 </div>
 </div>
 
@@ -31,13 +59,26 @@
 	<script type="text/javascript" src="BigVideo/lib/video.js"></script>
 	<script type="text/javascript" src="BigVideo/lib/imagesloaded.js"></script>
 	<script type="text/javascript" src="BigVideo/lib/bigvideo.js"></script>
-	<script type="text/javascript" src-"simplecart.js"></script>
+	<script type="text/javascript" src="resource/simpleCart.js"></script>
 	<script type="text/javascript">
 	simpleCart({
-		checkout: { 
-        type: "SendForm" , 
-        url: "http://carlsbags.com/checkout" 
-    	} 
+		cartColumns: [
+        { attr: "name", label: "Name"},
+        { view: "currency", attr: "price", label: "Price"},
+        { view: "decrement", label: false},
+        { attr: "quantity", label: "Qty"},
+        { view: "increment", label: false},
+        { view: "currency", attr: "total", label: "SubTotal" },
+        { view: "remove", text: "Remove", label: false}
+    ],
+    // "div" or "table" - builds the cart as a
+    // table or collection of divs
+    cartStyle: "table",
+
+		checkout: {
+        type: "PayPal" ,
+        url: "contact@carlsbags.com"
+    	}
 	});
 	</script>
 	<script type="text/javascript">

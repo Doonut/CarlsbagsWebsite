@@ -8,6 +8,7 @@
 	background-color: rgba(0,0,0,.6);
 	padding-left: 10px;
 	padding-bottom: 10px;
+	min-height:700px;
 }
 
 .content {
@@ -26,17 +27,15 @@
 html, body {
     margin: 0;
     padding: 0;
-    color: rgba(0,0,0,0);
+    font-family: BlissfulThinking;
+		color: #FFF;
     background-image: url('resource/background.jpeg');
     height: auto;
     background-repeat:no-repeat;
    	background-size:cover;
 }
 
-h1,p {
-	font-family: BlissfulThinking;
-	color: #FFF;
-}
+
 
 p	{
 	text-align: justify;
@@ -57,10 +56,30 @@ div {
     display: block;
 }
 
+.Products {
+	list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: block;
+}
+
+.productitem {
+	float: left;
+	padding-left: 70px;
+}
+
 li {
 	display: inline;
 	padding-left: 10px;
 }
+
+.simpleCart_items {
+  position: absolute;
+  left: 50%;
+  margin-top: 300px;
+  transform: translate(-50%, -50%);
+}
+
 .Headercbags {
 	font-family: BlissfulThinking;
 	font-size: 60px;
@@ -97,6 +116,7 @@ li {
 	width: 100%;
 	top: 0;
 	left: 0;
+	color: rgba(0,0,0,0);
 }
 
 .logo {
