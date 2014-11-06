@@ -22,28 +22,7 @@
 </div>
 </div>
 <div class="content">
-<h1 style="text-align:center; padding-top:50px;">About the Junk Bucket</h1>
-<p>
-	The Junk Bucket is a skateboard carrying backpack that includes: straps on the outside to hold
-
-skateboard, side pockets on the outside with special cup holding pockets, detachable filming pocket on
-
-the bottom of bag with an individual pocket for camera and camera caddy, a laptop carrier, and an extra
-
-front zipper pocket for organization. These backpacks incorporate flap cover and drawstrings; along with
-
-waterproof material. These backpacks are for skaters to cruise with no worries about carrying not too
-
-much baggage, but just enough.
-</p>
-<div class="simpleCart_shelfItem">
-  <h2 class="item_name"> Junk Bucket </h2>
-<p>  <input type="text" value="1" class="item_Quantity"><br>
-  <span class="item_price">$60.00</span><br>
-  <a class="item_add" href="javascript:;"> Add to Cart </a></p>
-  <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
-
-</div>
+	<h1 style="text-align:center; padding-top:50px;">Products</h1>
 </div>
 </div>
 
@@ -52,7 +31,15 @@ much baggage, but just enough.
 	<script type="text/javascript" src="BigVideo/lib/video.js"></script>
 	<script type="text/javascript" src="BigVideo/lib/imagesloaded.js"></script>
 	<script type="text/javascript" src="BigVideo/lib/bigvideo.js"></script>
-	<script src="simplecart.js"></script>
+	<script type="text/javascript" src-"simplecart.js"></script>
+	<script type="text/javascript">
+	simpleCart({
+		checkout: { 
+        type: "SendForm" , 
+        url: "http://carlsbags.com/checkout" 
+    	} 
+	});
+	</script>
 	<script type="text/javascript">
 		$(function(){
 			var BV = new $.BigVideo();
