@@ -31,16 +31,15 @@ html, body {
 		color: #FFF;
     background-image: url('resource/background.jpeg');
     height: auto;
+		font-size:25px;
     background-repeat:no-repeat;
    	background-size:cover;
 }
 
-
-
 p	{
 	text-align: justify;
-	font-size:25px;
 }
+
 h1 {
 		font-size:50px;
 }
