@@ -8,7 +8,7 @@
 	background-color: rgba(0,0,0,.6);
 	padding-left: 10px;
 	padding-bottom: 10px;
-	min-height:700px;
+	min-height:800px;
 }
 
 .content {
@@ -20,8 +20,38 @@
 	display: table;
 }
 
+.menu-outerproduct {
+	height: 84px;
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.tableproduct {
+	display: table;
+	margin: 0 auto;
+}
+
+ul.Products {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+}
+
+ul.Products li {
+		display: inline;
+}
+
 .Logo {
 	float:left;
+}
+
+.simpleCart_items {
+	margin-left: auto;
+  margin-right: auto;
+	width: 275px;
+}
+
+.item_price {
+	padding-left: 15px;
 }
 
 html, body {
@@ -72,24 +102,22 @@ li {
 	padding-left: 10px;
 }
 
-.simpleCart_items {
-  position: absolute;
-  left: 50%;
-  margin-top: 300px;
-  transform: translate(-50%, -50%);
-}
-
 .Headercbags {
 	font-family: BlissfulThinking;
 	font-size: 60px;
 	color:#FFFFFF;
 	padding-top: 15px;
 }
-.HeaderLinkCbags {text-decoration: none;}
-.HeaderLinkCbags:link  {color:#FFFFFF; background-color:transparent}
-.HeaderLinkCbags:visited {color:#FFFFFF; background-color:transparent}
-.HeaderLinkCbags:active  {color:#FFFFFF; background-color:transparent}
-.HeaderLinkCbags:hover{color:#03396C;}
+
+.item_add {
+	text-decoration: none;
+	
+}
+
+.item_add:link  {color:#FFFFFF; background-color:transparent}
+.item_add:visited {color:#FFFFFF; background-color:transparent}
+.item_add:active  {color:#FFFFFF; background-color:transparent}
+.item_add:hover{color:#03396C;}
 
 .HeaderLink {
 	font-family: BlissfulThinking;
