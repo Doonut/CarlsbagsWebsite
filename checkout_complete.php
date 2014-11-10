@@ -9,11 +9,12 @@
   $price = 'item_price_'.$i;
   $body .= 'item #'.$i.': ';
   $body .= $content[$name].' Quantity: '.$content[$quantity].' Price: '.$content[$price];
-  $body .= '.\\n \n\n';
+  $body .= '\r\n';
   }
   $headers = 'From: cbagswebserver@gmail.com' . "\r\n" .
              'Reply-To: cbagswebserver@gmail.com' . "\r\n" .
              'X-Mailer: PHP/' . phpversion();
+  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
   mail($to, $subject, $body, $headers);
   Header('Location: thankyou.html');
 ?>
