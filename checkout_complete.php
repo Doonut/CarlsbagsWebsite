@@ -12,16 +12,8 @@
   $body .= '<br>';
   }
   $headers = 'From: web@carlsbags.com' . "\r\n" .
-             'Reply-To: web@carlsbags.com' . "\r\n" .
+             'Reply-To: web@carsbags.com' . "\r\n" .
              'X-Mailer: PHP/' . phpversion();
   mail($to, $subject, $body, $headers);
-  // the message
-$msg = "First line of text\nSecond line of text";
-
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
-
-// send email
-mail("sales@carlsbags.com","My subject",$msg);
-
+  Header('Location: thankyou.html');
 ?>
