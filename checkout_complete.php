@@ -1,6 +1,6 @@
 <?php
   $to = 'sales@carlsbags.com';
-  $subject = 'Simple Cart Order';
+  $subject = 'Carlsbags Order';
   $content = $_POST;
   $body = '';
   for($i=1; $i < $content['itemCount'] + 1; $i++) {
@@ -8,8 +8,8 @@
   $quantity =  'item_quantity_'.$i;
   $price = 'item_price_'.$i;
   $body .= 'item #'.$i.': ';
-  $body .= $content[$name].' '.$content[$quantity].' '.$content[$price];
-  $body .= '<br>';
+  $body .= $content[$name].' Quantity: '.$content[$quantity].' Price: '.$content[$price];
+  $body .= '\n';
   }
   $headers = 'From: cbagswebserver@gmail.com' . "\r\n" .
              'Reply-To: cbagswebserver@gmail.com' . "\r\n" .
