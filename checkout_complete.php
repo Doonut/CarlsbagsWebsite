@@ -11,8 +11,8 @@
   $body .= $content[$name].' '.$content[$quantity].' '.$content[$price];
   $body .= '<br>';
   }
-  $headers = 'From: webserver@carlsbags.com' . "\r\n" .
-             'Reply-To: webserver@carlsbags.com' . "\r\n" .
+  $headers = 'From: cbagswebserver@gmail.com' . "\r\n" .
+             'Reply-To: cbagswebserver@gmail.com' . "\r\n" .
              'X-Mailer: PHP/' . phpversion();
   mail($to, $subject, $body, $headers);
   Header('Location: thankyou.html');
