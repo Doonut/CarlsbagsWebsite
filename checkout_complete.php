@@ -9,7 +9,7 @@
   $price = 'item_price_'.$i;
   $body .= 'item #'.$i.': ';
   $body .= $content[$name].' Quantity: '.$content[$quantity].' Price: '.$content[$price];
-  $body .= '                        \n<br />';
+  $body .= '                                                    \n <br />';
   }
   $headers = 'From: cbagswebserver@gmail.com' . "\r\n" .
              'Reply-To: cbagswebserver@gmail.com' . "\r\n" .
