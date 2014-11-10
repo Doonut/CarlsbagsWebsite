@@ -170,7 +170,13 @@ li {
 	font-size: 18px;
 }
 
-.checkoutfooter a {text-decoration: none;background-color:transparent;
+#email {
+	display: inline;
+	padding-right: 30px;
+	padding-left: 10px;
+}
+
+.checkoutfooter a {text-decoration: none;background-color:transparent;}
 .checkoutfooter a:link  {color:#FFFFFF; background-color:transparent}
 .checkoutfooter a:visited {color:#FFFFFF; background-color:transparent}
 .checkoutfooter a:active  {color:#FFFFFF; background-color:transparent}
