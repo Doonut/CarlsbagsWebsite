@@ -28,7 +28,8 @@
 	<li class="productitem">
 	<div class="simpleCart_shelfItem">
   <h2 class="item_name"> Pocket Bag </h2>
-<p>  <input type="text" value="1" size="1" class="item_Quantity">
+	<img src="resource/pocketbag.png" width="106" height="110" style="padding-left: 30px;">
+<p style="padding-left: 30px;">  <input type="text" value="1" size="1" class="item_Quantity">
   <span class="item_price">$14.99</span><br>
   <a class="item_add" href="javascript:;"> Add to Cart </a></p>
 </div>
@@ -52,8 +53,12 @@
 </ul>
 </div>
 </div>
-<h3 style="text-align:center; padding-top: 180px;">Cart</h3>
-<div class="simpleCart_items"></div>
+<h3 style="text-align:center; padding-top: 250px; padding-right: 20px;">Cart</h3>
+<div class="simpleCart_items" id="cartid"></div>
+<div class="checkoutfooter">
+<span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+<a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+</div>
 </div>
 </div>
 
@@ -68,21 +73,30 @@
 		cartColumns: [
         { attr: "name", label: "Name"},
         { view: "currency", attr: "price", label: "Price"},
-        { view: "decrement", label: false},
+        { view: "decrement", label: false, text: "-" },
         { attr: "quantity", label: "Qty"},
-        { view: "increment", label: false},
+        { view: "increment", label: false, text: "+" },
         { view: "currency", attr: "total", label: "SubTotal" },
         { view: "remove", text: "Remove", label: false}
     ],
-    // "div" or "table" - builds the cart as a
-    // table or collection of divs
+
     cartStyle: "table",
 
 		checkout: {
-        type: "PayPal" ,
-        url: "contact@carlsbags.com"
+        type: "SendForm" ,
+        url: "checkout_complete.php",
+				method: "POST",
+				success: "thankyou.html"
     	}
 	});
+	simpleCart.bind('update', function(){
+  if( simpleCart.quantity() === 0 ){
+    document.getElementById("cartid").style.display = "none";
+  } else {
+    document.getElementById("cartid").style.display = "block";
+  }
+});
+
 	</script>
 	<script type="text/javascript">
 		$(function(){

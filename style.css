@@ -44,16 +44,6 @@ ul.Products li {
 	float:left;
 }
 
-.simpleCart_items {
-	margin-left: auto;
-  margin-right: auto;
-	width: 275px;
-}
-
-.item_price {
-	padding-left: 15px;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -111,7 +101,7 @@ li {
 
 .item_add {
 	text-decoration: none;
-	
+
 }
 
 .item_add:link  {color:#FFFFFF; background-color:transparent}
@@ -150,6 +140,59 @@ li {
 	top: 0%;
 	left: 48%;
 }
+
+.simpleCart_items {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	font-size: 18px;
+	border: 1px solid white;
+}
+
+.simpleCart_items table {
+	border-collapse: collapse;
+}
+
+.simpleCart_items td {
+    padding-left: .7em;
+    padding-right: .7em;
+}
+
+.item_price {
+	padding-left: 15px;
+}
+
+.checkoutfooter{
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	padding-left: 10px;
+	font-size: 18px;
+}
+
+.checkoutfooter a {text-decoration: none;background-color:transparent;padding-left: 240px;}
+.checkoutfooter a:link  {color:#FFFFFF; background-color:transparent}
+.checkoutfooter a:visited {color:#FFFFFF; background-color:transparent}
+.checkoutfooter a:active  {color:#FFFFFF; background-color:transparent}
+.checkoutfooter a:hover{color:rgba(0,255,0,0.6);}
+
+.simpleCart_increment {text-decoration: none;background-color:transparent}
+.simpleCart_increment:link  {color:#FFFFFF; background-color:transparent}
+.simpleCart_increment:visited {color:#FFFFFF; background-color:transparent}
+.simpleCart_increment:active  {color:#FFFFFF; background-color:transparent}
+.simpleCart_increment:hover{color:rgba(0,255,0,0.6);}
+
+.simpleCart_decrement {text-decoration: none;background-color:transparent}
+.simpleCart_decrement:link  {color:#FFFFFF; background-color:transparent}
+.simpleCart_decrement:visited {color:#FFFFFF; background-color:transparent}
+.simpleCart_decrement:active  {color:#FFFFFF; background-color:transparent}
+.simpleCart_decrement:hover{color:rgba(255,0,0,0.6);}
+
+.simpleCart_remove {text-decoration: none;}
+.simpleCart_remove:link  {color:#FFFFFF; background-color:transparent}
+.simpleCart_remove:visited {color:#FFFFFF; background-color:transparent}
+.simpleCart_remove:active  {color:#FFFFFF; background-color:transparent}
+.simpleCart_remove:hover{color:#C04000;}
 
 .contactaddress:link  {color:#FFFFFF; background-color:transparent}
 .contactaddress:visited {color:#FFFFFF; background-color:transparent}
