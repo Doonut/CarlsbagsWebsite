@@ -23,5 +23,5 @@ $msg = wordwrap($msg,70);
 
 // send email
 mail("sales@carlsbags.com","My subject",$msg);
-  Header('Location: thankyou.html');
+
 ?>
