@@ -15,6 +15,13 @@
              'Reply-To: web@carlsbags.com' . "\r\n" .
              'X-Mailer: PHP/' . phpversion();
   mail($to, $subject, $body, $headers);
-  mail('sales@carlsbags.com', 'Test PHP Function', 'Test', $headers);
+  // the message
+$msg = "First line of text\nSecond line of text";
+
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email
+mail("sales@carlsbags.com","My subject",$msg);
   Header('Location: thankyou.html');
 ?>
