@@ -15,5 +15,6 @@
              'Reply-To: web@carlsbags.com' . "\r\n" .
              'X-Mailer: PHP/' . phpversion();
   mail($to, $subject, $body, $headers);
+  mail('sales@carlsbags.com', 'Test PHP Function', 'Test', $headers);
   Header('Location: thankyou.html');
 ?>
