@@ -90,9 +90,7 @@ Email: 	<input type="text" name="email" id="email">
         url: "checkout_complete.php",
 				method: "POST",
     	}
-			extra_data: {
-        email: document.getElementById("email").value
-}
+		
 	});
 	simpleCart.bind('update', function(){
   if( simpleCart.quantity() === 0 ){
@@ -101,7 +99,9 @@ Email: 	<input type="text" name="email" id="email">
     document.getElementById("cartid").style.display = "block";
   }
 });
-
+simpleCart.bind( 'beforeCheckout' , function( data ){
+data.email = document.getElementById("email").value;
+});
 	</script>
 	<script type="text/javascript">
 		$(function(){
