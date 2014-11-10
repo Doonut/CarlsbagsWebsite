@@ -170,7 +170,7 @@ li {
 	font-size: 18px;
 }
 
-.checkoutfooter a {text-decoration: none;background-color:transparent;padding-left: 240px;}
+.checkoutfooter a {text-decoration: none;background-color:transparent;
 .checkoutfooter a:link  {color:#FFFFFF; background-color:transparent}
 .checkoutfooter a:visited {color:#FFFFFF; background-color:transparent}
 .checkoutfooter a:active  {color:#FFFFFF; background-color:transparent}
