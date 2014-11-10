@@ -13,7 +13,7 @@
   }
   $headers = 'From: cbagswebserver@gmail.com' . "\r\n" .
              'Reply-To: cbagswebserver@gmail.com' . "\r\n" .
-             'X-Mailer: PHP/' . phpversion() .
+             'X-Mailer: PHP/' . phpversion() . "\r\n" .
              'Content-type: text/html; charset=iso-8859-1' . "\r\n";
   mail($to, $subject, $body, $headers);
   Header('Location: thankyou.html');
