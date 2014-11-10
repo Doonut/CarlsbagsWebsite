@@ -55,7 +55,7 @@
 </div>
 <h3 style="text-align:center; padding-top: 220px; padding-right: 20px;">Cart</h3>
 <div class="simpleCart_items" id="cartid"></div>
-<div class="checkoutfooter">
+<div id="checkoutfooter">
 <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
 <form id="emailform">
 Email: 	<input type="text" name="email" id="email">
@@ -95,8 +95,10 @@ Email: 	<input type="text" name="email" id="email">
 	simpleCart.bind('update', function(){
   if( simpleCart.quantity() === 0 ){
     document.getElementById("cartid").style.display = "none";
+		document.getElementById("checkoutfooter").style.display = "none";
   } else {
     document.getElementById("cartid").style.display = "block";
+		document.getElementById("checkoutfooter").style.display = "block";
   }
 });
 simpleCart.bind( 'beforeCheckout' , function( data ){
