@@ -58,6 +58,11 @@
 <div class="checkoutfooter">
 <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
 <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+<form>
+First name: <input type="text" name="first_name"><br>
+Last name: <input type="text" name="last_name"><br>
+Email: 	<input type="text" name="email">
+</form>
 </div>
 </div>
 </div>
@@ -84,9 +89,14 @@
 
 		checkout: {
         type: "SendForm" ,
-        url: "http://www.carlsbags.com/checkout_complete.php",
+        url: "checkout_complete.php",
 				method: "POST",
     	}
+			extra_data: {
+        first_name: document.getElementById("first_name").value,
+        last_name: document.getElementById("last_name").value,
+        email: document.getElementById("email").value
+}
 	});
 	simpleCart.bind('update', function(){
   if( simpleCart.quantity() === 0 ){
@@ -95,7 +105,11 @@
     document.getElementById("cartid").style.display = "block";
   }
 });
-
+simpleCart.bind( 'beforeCheckout' , function( data ){
+data.first_name = document.getElementById("first_name").value;
+data.last_name = document.getElementById("last_name").value;
+data.email = document.getElementById("email").value;
+});
 	</script>
 	<script type="text/javascript">
 		$(function(){
