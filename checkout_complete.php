@@ -3,11 +3,7 @@
   $subject = 'Carlsbags Order';
   $content = $_POST;
   $body = '';
-  $firstname = 'first_name';
-  $lastname = 'last_name';
   $email_from = 'email';
-  $body .= "First Name: ".$content[$firstname]."<br />";
-  $body .= "Last Name: ".$content[$lastname]."<br />";
   $body .= "Email: ".$content[$email_from]."<br /><br />";
   for($i=1; $i < $content['itemCount'] + 1; $i++) {
   $name = 'item_name_'.$i;
