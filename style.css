@@ -3,6 +3,22 @@
 	src: url(resource/blissfulthinking.ttf);
 }
 
+html, body {
+		margin: 0;
+		padding: 0;
+		font-family: BlissfulThinking;
+		color: #FFF;
+		background-image: url('resource/background.jpeg');
+		height: auto;
+		font-size:25px;
+		background-repeat:no-repeat;
+		background-size:cover;
+}
+
+.divPadding {
+padding-top:85px;
+}
+
 .relpos {
 	position: relative;
 	background-color: rgba(0,0,0,.6);
@@ -16,13 +32,20 @@
 	padding-right: 15%;
 }
 
+.productsH1 {
+	padding-right:30px;
+}
+
+.contactH1 {
+	padding-right: 380px;
+}
+
 .table {
 	display: table;
 }
 
 .menu-outerproduct {
 	height: 84px;
-	background: url(images/bar-bg.jpg) repeat-x;
 }
 
 .tableproduct {
@@ -44,24 +67,14 @@ ul.Products li {
 	float:left;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: BlissfulThinking;
-		color: #FFF;
-    background-image: url('resource/background.jpeg');
-    height: auto;
-		font-size:25px;
-    background-repeat:no-repeat;
-   	background-size:cover;
-}
-
 p	{
 	text-align: justify;
 }
 
 h1 {
 		font-size:50px;
+		text-align: center;
+		padding-top: 50px;
 }
 
 div {
@@ -93,7 +106,6 @@ li {
 }
 
 .Headercbags {
-	font-family: BlissfulThinking;
 	font-size: 60px;
 	color:#FFFFFF;
 	padding-top: 15px;
@@ -110,7 +122,6 @@ li {
 .item_add:hover{color:#03396C;}
 
 .HeaderLink {
-	font-family: BlissfulThinking;
 	text-align: center;
 	font-size: 26px;
 	text-decoration: none;
@@ -168,6 +179,16 @@ li {
 	width: 500px;
 	padding-left: 10px;
 	font-size: 18px;
+}
+
+.pocketBagPadding {
+	padding-left: 30px;
+}
+
+.cartHeaderStyle {
+	text-align:center;
+	padding-top: 220px;
+	padding-right: 20px;
 }
 
 #emailform {

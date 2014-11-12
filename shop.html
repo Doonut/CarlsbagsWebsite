@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
 	<title>Carlsbags</title>
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 	<link rel="icon" type="image/png" href="resource/logo.png">
@@ -8,7 +10,7 @@
 <body>
 <div class="relpos">
 <a href="index.html" class="HeaderLinkCbags"><img src="resource/logo.png" width="400" height="200" class="Logo"></a>
-<div style="padding-top:85px;">
+<div class="divPadding">
 <!--NavBar-->
 <div class="table">
 <ul class="Nav">
@@ -21,14 +23,14 @@
 </div>
 </div>
 <div class="content">
-	<h1 style="text-align:center; padding-top:50px; padding-right:30px;">Products</h1>
+	<h1 class="productsH1">Products</h1>
 	<div class="menu-outerproduct">
 	<div class="tableproduct">
 <ul class="Products">
 	<li class="productitem">
 	<div class="simpleCart_shelfItem">
   <h2 class="item_name"> Pocket Bag </h2>
-	<img src="resource/pocketbag.png" width="106" height="110" style="padding-left: 30px;">
+	<img src="resource/pocketbag.png" width="106" height="110" class="pocketBagPadding">
 <p style="padding-left: 30px;">  <input type="text" value="1" size="1" class="item_Quantity">
   <span class="item_price">$14.99</span><br>
   <a class="item_add" href="javascript:;"> Add to Cart </a></p>
@@ -53,7 +55,7 @@
 </ul>
 </div>
 </div>
-<h3 style="text-align:center; padding-top: 220px; padding-right: 20px;">Cart</h3>
+<h3 class="cartHeaderStyle">Cart</h3>
 <div class="simpleCart_items" id="cartid"></div>
 <div id="checkoutfooter">
 <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
@@ -64,12 +66,12 @@ Email: 	<input type="text" name="email" id="email">
 </div>
 </div>
 </div>
-
-<script type="text/javascript" src="BigVideo/lib/jquery.js"></script>
-	<script type="text/javascript" src="BigVideo/lib/jquery-ui.js"></script>
-	<script type="text/javascript" src="BigVideo/lib/video.js"></script>
-	<script type="text/javascript" src="BigVideo/lib/imagesloaded.js"></script>
-	<script type="text/javascript" src="BigVideo/lib/bigvideo.js"></script>
+	<script type="text/javascript" src="resource/jquery.js"></script>
+	<script type="text/javascript" src="resource/jquery-ui.js"></script>
+	<script type="text/javascript" src="resource/video.js"></script>
+	<script type="text/javascript" src="resource/EventEmitter.min.js"></script>
+	<script type="text/javascript" src="resource/imagesloaded.js"></script>
+	<script type="text/javascript" src="resource/bigvideo.js"></script>
 	<script type="text/javascript" src="resource/simpleCart.js"></script>
 	<script type="text/javascript">
 	simpleCart({
