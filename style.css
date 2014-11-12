@@ -133,7 +133,7 @@ li {
 #pocketbag:hover{color:#0365B8;}
 #junkbucket:hover{color:#93B50C;}
 #surfsling:hover{color:#FFF68F;}
-#shop:hover{color:#AAAAAA;}
+#shop:hover{color:#E8866C;}
 #contact:hover{color:#C04000;}
 
 #big-video-wrap {
@@ -144,6 +144,13 @@ li {
 	top: 0;
 	left: 0;
 	color: rgba(0,0,0,0);
+}
+
+h5 {
+	font-size: 14px;
+	position: absolute;
+	left: 10px;
+	top: 800px;
 }
 
 .logo {
@@ -183,6 +190,14 @@ li {
 
 .pocketBagPadding {
 	padding-left: 30px;
+}
+
+.junkBucketPadding {
+	padding-left: 25px;
+}
+
+.surfSlingPadding {
+	padding-left: 10px;
 }
 
 .cartHeaderStyle {
